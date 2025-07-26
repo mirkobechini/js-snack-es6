@@ -33,14 +33,23 @@ function randomNumberGenerator() {
 }
 
 //setting points and fouls suffered and generation array with name and fouls
-const summary = []
+//const summary = []
 for (let i = 0; i < team.length; i++) {
     team[i]['points'] = randomNumberGenerator()
     team[i]['foulsSuffered'] = randomNumberGenerator()
-    
+
+    /*
     summary[i] = {
         name: team[i]['name'],
         foulsSuffered: team[i]['foulsSuffered']
     }
-    console.log(summary[i]);
+    console.log(summary[i]);*/
 }
+
+const summary = team.map(thisTeam => {
+    return {
+        name: thisTeam.name,
+        foulsSuffered: thisTeam.foulsSuffered
+    }
+})
+console.log(summary);
