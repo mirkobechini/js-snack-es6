@@ -24,10 +24,9 @@ const lightierBike = {
     weight: 100000
 }
 
-for(let i = 0; i < runningBike.length; i++){
-    console.log(i);
-    if (lightierBike[bikeKey] >= runningBike[i][bikeKey]){
-        for(let key in runningBike[i]){
+for (let i = 0; i < runningBike.length; i++) {
+    if (lightierBike[bikeKey] >= runningBike[i][bikeKey]) {
+        for (let key in runningBike[i]) {
             lightierBike[key] = runningBike[i][key]
         }
     }
