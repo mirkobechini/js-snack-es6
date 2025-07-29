@@ -27,6 +27,13 @@ for (let i = 0; i < runningBike.length; i++) {
             lightierBike[key] = runningBike[i][key]
         }
     }
+    /*
+    
+    if (lightierBike.weight >= runningBike[i].weight) {
+        lightierBike = runningBike[i]
+    }
+
+    */
 }
 
 //log lightier bike
