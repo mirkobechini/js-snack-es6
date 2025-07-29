@@ -19,10 +19,7 @@ const runningBike = [{
 
 //find less weight bike
 const bikeKey = 'weight'
-const lightierBike = {
-    name: "",
-    weight: 100000
-}
+let lightierBike = runningBike[0]
 
 for (let i = 0; i < runningBike.length; i++) {
     if (lightierBike[bikeKey] >= runningBike[i][bikeKey]) {
